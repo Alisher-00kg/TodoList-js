@@ -1,0 +1,187 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/564x/09/00/a3/0900a34b9d879c273cb829c829bfe042.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  color: white;
+}
+
+form {
+  width: 650px;
+  height: 150px;
+  display: flex;
+  margin: 0 auto;
+  background: white;
+  -webkit-box-shadow: -2px 4px 47px -17px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -2px 4px 47px -17px rgba(34, 60, 80, 0.2);
+  box-shadow: -2px 4px 47px -17px rgba(34, 60, 80, 0.2);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+form:hover {
+  transform: scale(1.02);
+  -webkit-box-shadow: -8px -1px 66px 2px rgba(4, 14, 21, 0.22);
+  -moz-box-shadow: -8px -1px 66px 2px rgba(4, 14, 21, 0.22);
+  box-shadow: -8px -1px 66px 2px rgba(4, 14, 21, 0.22);
+  transition: 0.3s linear;
+}
+
+input {
+  width: 370px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid steelblue;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: teal;
+}
+
+button {
+  width: 150px;
+  height: 65px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 15px;
+  color: steelblue;
+  border: 2px solid steelblue;
+  cursor: pointer;
+  background: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-attachment: scroll;
+  scroll-behavior: smooth;
+}
+
+.msg {
+  position: absolute;
+  bottom: 14px;
+  left: 110px;
+  color: red;
+
+  font-size: 18px;
+}
+
+.list__item {
+  width: 650px;
+  height: 100px;
+  display: flex;
+  margin: 0 auto;
+  background: white;
+  gap: 15px;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 30px;
+  padding-left: 40px;
+  color: teal;
+  position: relative;
+}
+
+.list__item:hover {
+  transform: scale(1.02);
+  -webkit-box-shadow: -8px -1px 66px 2px rgba(4, 14, 21, 0.22);
+  -moz-box-shadow: -8px -1px 66px 2px rgba(4, 14, 21, 0.22);
+  box-shadow: -8px -1px 66px 2px rgba(4, 14, 21, 0.22);
+  transition: 0.3s linear;
+}
+
+img {
+  width: 50px;
+  height: 40px;
+}
+
+span {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  right: 40px;
+}
+span > input {
+  width: 45px;
+  height: 35px;
+  margin-top: 3px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.modal-content {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 20px;
+}
+.modal-content p {
+  width: 300px;
+  height: 20px;
+  font-size: 34px;
+  color: teal;
+  text-align: center;
+  margin: 0 auto;
+}
+.modal-content div {
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+
+#confirmDelete,
+#cancelDelete {
+  margin-top: 10px;
+}
